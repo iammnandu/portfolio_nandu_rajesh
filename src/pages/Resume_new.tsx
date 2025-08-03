@@ -6,27 +6,25 @@ import { Download, GraduationCap } from "lucide-react";
 
 export default function Resume() {
   const skills = [
-    { name: "Python", level: 90 },
-    { name: "PyTorch", level: 85 },
-    { name: "TensorFlow", level: 80 },
-    { name: "OpenCV", level: 90 },
-    { name: "YOLO", level: 85 },
-    { name: "ROS2", level: 80 },
-    { name: "JavaScript", level: 75 },
-    { name: "React.js", level: 80 },
-    { name: "Node.js", level: 75 },
-    { name: "C", level: 80 },
+    { name: "React.js", level: 90 },
+    { name: "Node.js", level: 85 },
+    { name: "TypeScript", level: 80 },
+    { name: "JavaScript", level: 90 },
+    { name: "Python", level: 75 },
+    { name: "AWS", level: 70 },
+    { name: "Docker", level: 65 },
+    { name: "MongoDB", level: 80 },
+    { name: "PostgreSQL", level: 75 },
+    { name: "Git/GitHub", level: 90 },
   ];
 
   const tools = [
-    { name: "Jetson Orin Nano", level: 85 },
-    { name: "Arduino/ESP32", level: 90 },
-    { name: "Django", level: 80 },
-    { name: "MongoDB", level: 75 },
-    { name: "MySQL", level: 80 },
-    { name: "Docker", level: 70 },
-    { name: "Git/GitHub", level: 90 },
-    { name: "Linux", level: 85 },
+    { name: "React Native", level: 70 },
+    { name: "Next.js", level: 80 },
+    { name: "Express.js", level: 85 },
+    { name: "Tailwind CSS", level: 90 },
+    { name: "REST APIs", level: 85 },
+    { name: "GraphQL", level: 60 },
   ];
 
   return (
@@ -65,17 +63,17 @@ export default function Resume() {
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
                 <div className="mb-2">
                   <h3 className="text-lg font-semibold text-foreground">
-                    B.Tech in Artificial Intelligence
+                    Bachelor of Engineering in Computer Science
                   </h3>
                   <p className="text-sm text-primary font-medium">
-                    Aug 2022 — May 2026
+                    2019 — 2023
                   </p>
                   <p className="text-muted-foreground">
-                    Muthoot Institute of Technology and Science
+                    VTU University, Karnataka, India
                   </p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Current CGPA: 9.71/10.0 | Specialization: Computer Vision,
-                    Minor in Electronics
+                    Focused on software engineering principles, data structures,
+                    algorithms, and full-stack development.
                   </p>
                 </div>
               </div>
@@ -84,58 +82,34 @@ export default function Resume() {
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-green-500 rounded-full"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">
-                    Research & Development Intern
+                    Software Engineer
                   </h3>
                   <p className="text-sm text-primary font-medium">
-                    Jan 2024 — Present
+                    2023 — Present
                   </p>
                   <p className="text-muted-foreground mb-2">
-                    Enproducts, Kochi
+                    Bangalore, Karnataka, India
                   </p>
                   <div className="text-sm text-muted-foreground space-y-1">
                     <p>
-                      • Developed autonomous AGV cart for industrial automation
-                      and parts transportation
+                      • Developed and maintained full-stack web applications
+                      using React.js and Node.js
                     </p>
                     <p>
-                      • Built AI jewelry measurement system with high accuracy
-                      stock counting
+                      • Implemented responsive UI components with TypeScript and
+                      Tailwind CSS
                     </p>
                     <p>
-                      • Created Big Fuse detector for EV units quality control
+                      • Collaborated with cross-functional teams to deliver
+                      high-quality software solutions
                     </p>
                     <p>
-                      • Implemented computer vision solutions using YOLO, ROS2,
-                      and embedded systems
-                    </p>
-                    <p>• Worked with Jetson Orin Nano for edge AI deployment</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-l-2 border-primary/20 pl-6 relative">
-                <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">
-                    Full Stack Development 
-                  </h3>
-                  <p className="text-sm text-primary font-medium">
-                    June 2025 — Present
-                  </p>
-                  <p className="text-muted-foreground mb-2">
-                    100xDevs Cohort by Harkirat Singh
-                  </p>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <p>
-                      • Gained hands-on experience in MERN stack development
+                      • Worked with AWS cloud services for deployment and
+                      infrastructure management
                     </p>
                     <p>
-                      • Built scalable applications with authentication,
-                      routing, and API integrations
-                    </p>
-                    <p>
-                      • Learned modern web development practices and deployment
-                      strategies
+                      • Participated in code reviews and maintained clean,
+                      efficient codebases
                     </p>
                   </div>
                 </div>
@@ -145,7 +119,7 @@ export default function Resume() {
             <div className="mt-6 pt-6 border-t border-border text-center">
               <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                 <span>💡</span>
-                Skills and Experience - Last updated in June 2025
+                Skills and Experience - Last updated on August 2025
               </p>
             </div>
           </Card>

@@ -7,49 +7,40 @@ export default function Blog() {
   const blogPosts = [
     {
       title:
-        "Computer Vision in Industrial Automation: Real-world Applications",
-      date: "December 15, 2024",
+        "Building Scalable React Applications: Best Practices and Patterns",
+      date: "August 15, 2025",
       author: "Nandu Rajesh",
       excerpt:
-        "Exploring how computer vision and YOLO models are revolutionizing quality control and automation in manufacturing industries.",
-      readTime: "8 min read",
-      tags: ["Computer Vision", "YOLO", "Industrial Automation", "AI"],
+        "Learn how to structure and build maintainable React applications using modern patterns and best practices.",
+      readTime: "5 min read",
+      tags: ["React", "JavaScript", "Frontend"],
     },
     {
-      title: "Building Autonomous Navigation Systems with ROS2",
-      date: "December 10, 2024",
+      title: "Node.js Performance Optimization: Tips and Tricks",
+      date: "August 10, 2025",
       author: "Nandu Rajesh",
       excerpt:
-        "A deep dive into developing self-navigating robotic systems using ROS2, SLAM, and advanced path planning algorithms.",
-      readTime: "12 min read",
-      tags: ["ROS2", "Robotics", "SLAM", "Navigation"],
+        "Discover performance optimization techniques to make your Node.js applications faster and more efficient.",
+      readTime: "7 min read",
+      tags: ["Node.js", "Performance", "Backend"],
     },
     {
-      title: "Deep Learning for Object Detection: From Theory to Production",
-      date: "December 5, 2024",
+      title: "TypeScript in 2025: Advanced Features and Best Practices",
+      date: "August 5, 2025",
       author: "Nandu Rajesh",
       excerpt:
-        "Implementing YOLOv8 for real-time object detection in industrial applications with practical deployment strategies.",
-      readTime: "10 min read",
-      tags: ["Deep Learning", "YOLOv8", "Object Detection", "Python"],
-    },
-    {
-      title: "Face Recognition and Privacy in AI Event Management",
-      date: "November 28, 2024",
-      author: "Nandu Rajesh",
-      excerpt:
-        "Balancing facial recognition capabilities with privacy concerns in AI-powered event photography systems.",
+        "Explore the latest TypeScript features and how they can improve your development workflow.",
       readTime: "6 min read",
-      tags: ["Face Recognition", "Privacy", "AI Ethics", "DeepFace"],
+      tags: ["TypeScript", "JavaScript", "Development"],
     },
     {
-      title: "Optimizing AI Models for Edge Deployment",
-      date: "November 20, 2024",
+      title: "Deploying React Apps to AWS: A Complete Guide",
+      date: "August 1, 2025",
       author: "Nandu Rajesh",
       excerpt:
-        "Techniques for deploying machine learning models on edge devices like Jetson Nano for real-time inference.",
-      readTime: "9 min read",
-      tags: ["Edge AI", "Jetson", "Model Optimization", "TensorRT"],
+        "Step-by-step guide to deploying React applications on AWS using various services and best practices.",
+      readTime: "10 min read",
+      tags: ["AWS", "React", "Deployment"],
     },
   ];
 
@@ -62,8 +53,8 @@ export default function Blog() {
           </h1>
           <div className="h-1 w-16 bg-gradient-primary rounded-full"></div>
           <p className="text-muted-foreground mt-4">
-            Insights and tutorials about AI, Machine Learning, Computer Vision,
-            and Robotics.
+            Thoughts, tutorials, and insights about web development and
+            technology.
           </p>
         </div>
 

@@ -7,15 +7,17 @@ export function PortfolioSidebar() {
       {/* Profile Section */}
       <div className="text-center mb-6 md:mb-8">
         <div className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 rounded-3xl overflow-hidden shadow-card">
-          <img 
-            src={profileImage} 
-            alt="Profile" 
+          <img
+            src={profileImage}
+            alt="Profile"
             className="w-full h-full object-cover"
           />
         </div>
-        <h1 className="text-xl md:text-2xl font-bold text-portfolio-sidebar-foreground mb-2">NANDU RAJESH</h1>
-        <p className="text-muted-foreground text-sm">Software Engineer</p>
-        <p className="text-muted-foreground text-xs">Last updated: August 2025</p>
+        <h1 className="text-xl md:text-2xl font-bold text-portfolio-sidebar-foreground mb-2">
+          NANDU RAJESH
+        </h1>
+        <p className="text-muted-foreground text-sm">AI/ML Engineer</p>
+        <p className="text-muted-foreground text-xs">Last updated: June 2025</p>
       </div>
 
       {/* Contact Info */}
@@ -25,8 +27,12 @@ export function PortfolioSidebar() {
             <Mail className="w-4 h-4 md:w-5 md:h-5 text-secondary-foreground" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">EMAIL</p>
-            <p className="text-xs md:text-sm font-medium text-foreground truncate">nandurajesh003@gmail.com</p>
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              EMAIL
+            </p>
+            <p className="text-xs md:text-sm font-medium text-foreground truncate">
+              iamnandurajesh@gmail.com
+            </p>
           </div>
         </div>
 
@@ -35,8 +41,12 @@ export function PortfolioSidebar() {
             <Phone className="w-4 h-4 md:w-5 md:h-5 text-secondary-foreground" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">PHONE</p>
-            <p className="text-xs md:text-sm font-medium text-foreground">+91 9632587410</p>
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              PHONE
+            </p>
+            <p className="text-xs md:text-sm font-medium text-foreground">
+              +91 7012749823
+            </p>
           </div>
         </div>
 
@@ -45,8 +55,12 @@ export function PortfolioSidebar() {
             <MapPin className="w-4 h-4 md:w-5 md:h-5 text-secondary-foreground" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">LOCATION</p>
-            <p className="text-xs md:text-sm font-medium text-foreground">Bangalore, Karnataka, India</p>
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              LOCATION
+            </p>
+            <p className="text-xs md:text-sm font-medium text-foreground">
+              Thiruvaniyoor, Ernakulam, Kerala
+            </p>
           </div>
         </div>
 
@@ -55,8 +69,12 @@ export function PortfolioSidebar() {
             <Github className="w-4 h-4 md:w-5 md:h-5 text-secondary-foreground" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">GITHUB</p>
-            <p className="text-xs md:text-sm font-medium text-foreground">@nandurajesh</p>
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              GITHUB
+            </p>
+            <p className="text-xs md:text-sm font-medium text-foreground">
+              @iammnandu
+            </p>
           </div>
         </div>
 
@@ -65,24 +83,40 @@ export function PortfolioSidebar() {
             <Linkedin className="w-4 h-4 md:w-5 md:h-5 text-secondary-foreground" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">LINKEDIN</p>
-            <p className="text-xs md:text-sm font-medium text-foreground">nandu-rajesh</p>
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              LINKEDIN
+            </p>
+            <p className="text-xs md:text-sm font-medium text-foreground">
+              iamnandurajesh
+            </p>
           </div>
         </div>
       </div>
 
       {/* Social Links */}
       <div className="flex justify-center gap-3 pt-4 md:pt-6 border-t border-border">
-        <a href="https://linkedin.com/in/nandu-rajesh" className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+        <a
+          href="https://linkedin.com/in/iamnandurajesh"
+          className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
           <Linkedin className="w-4 h-4" />
         </a>
-        <a href="https://github.com/nandurajesh" className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+        <a
+          href="https://github.com/iammnandu"
+          className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
           <Github className="w-4 h-4" />
         </a>
-        <a href="mailto:nandurajesh003@gmail.com" className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+        <a
+          href="mailto:iamnandurajesh@gmail.com"
+          className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
           <Mail className="w-4 h-4" />
         </a>
-        <a href="tel:+919632587410" className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+        <a
+          href="tel:+917012749823"
+          className="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
           <Phone className="w-4 h-4" />
         </a>
       </div>

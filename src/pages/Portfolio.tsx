@@ -3,90 +3,99 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "Machine Learning", "Deep Learning", "Web Development", "Python Development"];
+  const filters = [
+    "All",
+    "AI/ML",
+    "Computer Vision",
+    "Robotics",
+    "Web Development",
+  ];
 
   const projects = [
     {
-      title: "Player Value Prediction",
-      category: "Machine Learning",
-      image: "/api/placeholder/300/200",
-      description: "Football player market value prediction using machine learning algorithms."
+      title: "Autonomous Industrial AGV Cart",
+      category: "Robotics",
+      description:
+        "Self-navigating cart for industrial automation and parts transportation using advanced computer vision and navigation algorithms.",
+      technologies: [
+        "ROS2",
+        "YOLO",
+        "Jetson Orin Nano",
+        "Computer Vision",
+        "Python",
+      ],
+      github: "https://github.com/iammnandu/agv-cart",
     },
     {
-      title: "Movie Recommender System", 
-      category: "Machine Learning",
-      image: "/api/placeholder/300/200",
-      description: "Collaborative filtering based movie recommendation system."
+      title: "AI Jewelry Stock Measurement System",
+      category: "Computer Vision",
+      description:
+        "Automated inventory system with high accuracy in stock counting using computer vision and deep learning techniques.",
+      technologies: [
+        "YOLOv8",
+        "Paddle OCR",
+        "Python",
+        "OpenCV",
+        "Deep Learning",
+      ],
+      github: "https://github.com/iammnandu/jewelry-measurement",
     },
     {
-      title: "Cat Vs Dog Classifier",
-      category: "Machine Learning", 
-      image: "/api/placeholder/300/200",
-      description: "Image classification model to distinguish between cats and dogs."
+      title: "Big Fuse Detector for EV Units",
+      category: "Computer Vision",
+      description:
+        "Automated fuse detection system for power distribution box quality control in electric vehicles.",
+      technologies: [
+        "YOLOv8",
+        "Computer Vision",
+        "Industrial Automation",
+        "Python",
+      ],
+      github: "https://github.com/iammnandu/fuse-detector",
     },
     {
-      title: "EDA Projects Collection",
-      category: "Machine Learning",
-      image: "/api/placeholder/300/200",
-      description: "Collection of exploratory data analysis projects."
+      title: "SnapFlow - AI Event Photography Management",
+      category: "AI/ML",
+      description:
+        "AI-powered photo sorting with face recognition and privacy controls for event management.",
+      technologies: [
+        "MERN",
+        "Django",
+        "OpenCV",
+        "DeepFace",
+        "ArcFace",
+        "MySQL",
+        "Celery",
+      ],
+      github: "https://github.com/iammnandu/snapflow",
+      demo: "https://snapflow-demo.vercel.app",
     },
     {
-      title: "Guess The Footballer By Eyes",
-      category: "Deep learning",
-      image: "/api/placeholder/300/200",
-      description: "Deep learning model to identify footballers by their eyes."
-    },
-    {
-      title: "Seq2Seq Chatbot",
-      category: "Deep learning", 
-      image: "/api/placeholder/300/200",
-      description: "Sequence to sequence neural network for chatbot conversations."
-    },
-    {
-      title: "GPT From Scratch",
-      category: "Deep learning",
-      image: "/api/placeholder/300/200",
-      description: "Implementation of GPT architecture from scratch."
-    },
-    {
-      title: "Image Captioning",
-      category: "Deep learning",
-      image: "/api/placeholder/300/200", 
-      description: "Neural network model for generating image captions."
-    },
-    {
-      title: "Spotify Clone",
+      title: "Portfolio Website",
       category: "Web Development",
-      image: "/api/placeholder/300/200",
-      description: "Full-stack music streaming application clone."
+      description:
+        "Personal portfolio website built with React, TypeScript, and Tailwind CSS showcasing projects and experience.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "shadcn/ui",
+      ],
+      github: "https://github.com/iammnandu/portfolio",
+      demo: "https://nandurajesh.dev",
     },
-    {
-      title: "Netflix Clone",
-      category: "Web Development",
-      image: "/api/placeholder/300/200",
-      description: "Movie streaming platform with modern UI/UX."
-    },
-    {
-      title: "Blackjack Game",
-      category: "Python Development",
-      image: "/api/placeholder/300/200",
-      description: "Interactive blackjack card game built with Python."
-    },
-    {
-      title: "AI Snake Game", 
-      category: "Python Development",
-      image: "/api/placeholder/300/200",
-      description: "Snake game with AI agent using reinforcement learning."
-    }
   ];
 
-  const filteredProjects = activeFilter === "All" 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <Layout>
@@ -104,8 +113,8 @@ export default function Portfolio() {
               variant={activeFilter === filter ? "default" : "outline"}
               onClick={() => setActiveFilter(filter)}
               className={
-                activeFilter === filter 
-                  ? "bg-gradient-primary text-primary-foreground" 
+                activeFilter === filter
+                  ? "bg-gradient-primary text-primary-foreground"
                   : "hover:bg-accent"
               }
             >
@@ -117,31 +126,81 @@ export default function Portfolio() {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="group overflow-hidden bg-gradient-card border-0 shadow-card hover:shadow-hover transition-all duration-300 cursor-pointer">
+            <Card
+              key={index}
+              className="group overflow-hidden bg-gradient-card border-0 shadow-card hover:shadow-hover transition-all duration-300"
+            >
               <div className="aspect-video bg-muted relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
                       <span className="text-2xl">🚀</span>
                     </div>
-                    <p className="text-sm font-medium text-foreground">{project.title}</p>
+                    <p className="text-sm font-medium text-foreground">
+                      {project.title}
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <Badge variant="secondary" className="text-xs mb-2">
-                  {project.category}
-                </Badge>
-                <p className="text-sm text-muted-foreground">
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <Badge variant="secondary" className="text-xs">
+                    {project.category}
+                  </Badge>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
                   {project.description}
                 </p>
+
+                <div className="flex flex-wrap gap-1 mb-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <Badge
+                      key={techIndex}
+                      variant="outline"
+                      className="text-xs"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+
+                <div className="flex gap-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1"
+                    onClick={() => window.open(project.github, "_blank")}
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    Code
+                  </Button>
+                  {project.demo && (
+                    <Button
+                      size="sm"
+                      className="flex-1 bg-gradient-primary text-primary-foreground"
+                      onClick={() => window.open(project.demo, "_blank")}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </Button>
+                  )}
+                </div>
               </div>
             </Card>
           ))}
         </div>
+
+        {filteredProjects.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground">
+              No projects found for the selected category.
+            </p>
+          </div>
+        )}
       </div>
     </Layout>
   );
